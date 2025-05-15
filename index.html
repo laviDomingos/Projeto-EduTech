@@ -8,9 +8,11 @@
 </head>
 <body>
     <header>
-        <img id="logo-principal" src="/imagens/logo.svg" alt="Logo da EduTech">
-        <h1>EduTech Academy</h1>
-        <img src="/imagens/menu.svg" alt="Menu">
+        <img id="logo-principal" src="/icons/logo.svg" alt="Logo da EduTech">
+        <h1 style="color: #0077CC;">EduTech Academy</h1>
+        <nav class="navegacao-menu">
+        <img src="icons/menu.svg" alt="Menu">
+        </nav>
     </header>
 
     <div class="frase-inicial">
@@ -18,9 +20,137 @@
         <p>Cursos de alta qualidade para impulsionar sua carreira e transformar sua vida profissional.</p>
     </div>
 
+    <h3>Nossos Cursos</h3>
+    <section class="curso-1">
+        <img src="/icons/fullstack.jpg" alt="Desenvolvimento Web Fullstack">
+        <div class="informacoes">
+            <h2>Desenvolvimento Web Fullstack</h2>
+            <img src="icons/clock.svg" alt="Relógio">
+            <h2>120 horas</h2>
+            <img src="icons/map-pin.svg" alt="Localização">
+            <h2>EAD</h2>
+            <a href="pages/dfullstack.html" class="botoes-ver-detalhes">Ver Detalhes</a>
+        </div>
+    </section>
+
+    <section class="curso-2">
+        <img src="images/data_science.jpg" alt="Data Since & Machine Learning">
+        <div class="informacoes">
+            <h2>Data Since & Machine Learning</h2>
+            <img src="icons/clock.svg" alt="Relógio">
+            <h2>100 horas</h2>
+            <img src="icons/map-pin.svg" alt="Localização">
+            <h2>Presencial</h2>
+            <a href="pages/dfullstack.html" class="botoes-ver-detalhes">Ver Detalhes</a>
+        </div>
+    </section>
     
+    <section class="curso-3">
+        <img src="images/marketing.jpg" alt="Marketing Digital & SEO">
+        <div class="informacoes">
+            <h2>Marketing Digital & SEO</h2>
+            <img src="icons/clock.svg" alt="Relógio">
+            <h2>80 horas</h2>
+            <img src="icons/map-pin.svg" alt="Localização">
+            <h2>EAD</h2>
+            <a href="pages/dfullstack.html" class="botoes-ver-detalhes">Ver Detalhes</a>
+        </div>
+    </section>
 
+    <section class="curso-4">
+        <img src="/icons/ux-design.jpg" alt="UX/UI Design">
+        <div class="informacoes">
+            <h2>UX/UI Design</h2>
+            <img src="icons/clock.svg" alt="Relógio">
+            <h2>90 horas</h2>
+            <img src="icons/map-pin.svg" alt="Localização">
+            <h2>Presencial</h2>
+            <a href="pages/dfullstack.html" class="botoes-ver-detalhes">Ver Detalhes</a>
+        </div>
+    </section>
 
-    <script src="/script.js"></script>
+    <h3>Matrícula</h3>
+
+    <form id="formulario-matricula">
+        <h2>Formulário de Matrícula</h2>
+        <div class="form">
+            <label for="nome">Nome Completo *</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+
+            <label for="email">Email *</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu email">
+
+            <label for="telefone">Telefone *</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+
+            <label for="curso-desejado">Curso Desejado *</label>
+            <select name="curso-desejado" id="box-curso">
+                <option value="" disabled selected hidden>Selecione um curso</option>
+                <option value="opcao-1">Desenvolvimento Web Fullstack</option>
+                <option value="opcao-2">Data Since & Machine Learning</option>
+                <option value="opcao-3">Marketing Digital & SEO</option>
+                <option value="opcao-4">UX/UI Design</option>
+            </select>
+
+            <label for="cep">CEP *</label>
+            <input type="number" id="cep" name="cep" placeholder="00000-000">
+
+            <label for="rua">Rua *</label>
+            <input type="text" id="rua" name="rua">
+
+            <label for="bairro">Bairro *</label>
+            <input type="text" id="bairro" name="bairro">
+
+            <label for="cidade">Cidade *</label>
+            <input type="text" id="cidade" name="cidade">
+
+            <label for="estado">Estado *</label>
+            <input type="text" name="" id="">
+        </div>
+        <button type="submit">Enviar Matrícula</button>
+    </form>
+
+    <div class="areas-conhecimento">
+        <h2>Áreas do Conhecimento</h2>
+        <ul class="areas">
+            <li>Tecnologia da Informação</li>
+            <li>Administração e Negócios</li>
+            <li>Marketing Digital</li>
+            <li>Design Gráfico</li>
+            <li>Engenharia</li>
+            <li>Saúde</li>
+            <li>Educação</li>
+            <li>Gastronomia</li>
+        </ul>
+    </div>
+
+    <footer>
+        <h2>EduTech Academy</h2>
+        <p>Transformando carreiras através da educação de qualidade desde 2010.</p>
+
+        <div class="contato">
+            <h2>Contato</h2>
+            <img src="icons/phone.svg" alt="Ícone de Telefone">
+            <p>(11) 99999-9999</p>
+            <p>contato@edutechacademy.com.br</p>
+            <p>Av. Paulista, 1000 - São Paulo/SP</p>
+        </div>
+
+        <div class="redes-sociais">
+            <h2>Redes Sociais</h2>
+            <img src="icons/facebook.svg" alt="Ícone do Facebook">
+            <img src="icons/instagram.svg" alt="Ícone do Instragram">
+            <img src="icons/twitter.svg" alt="Ícone do Twitter">
+            <img src="icons/linkedin.svg" alt="Ícone do Linkedin">
+        </div>
+
+        <div class="frase-final">
+            <p>2025 EduTech Academy. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <img src="icons/moon.svg" alt="Alternar Modo Claro/Escuro" id="icone-modo">
+
+    <script src="script.js"></script>
 </body>
 </html>
